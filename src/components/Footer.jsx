@@ -3,16 +3,20 @@ const Footer = () => {
     <footer className="bg-[#64B5C5] text-white text-center pt-10">
       <div className="max-w-5xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-4xl font-bold mb-2 uppercase">КОНТАКТНЫЕ ДАННЫЕ</h2>
+        <h2 className="text-2xl md:text-4xl font-bold mb-2 uppercase">
+          КОНТАКТНЫЕ ДАННЫЕ
+        </h2>
 
         {/* Main Content */}
-        <div className="flex flex-col md:flex-row justify-between text-2xl items-center">
+        <div className="flex flex-col md:flex-row justify-between text-lg md:text-2xl items-center">
           {/* Left Section - Address & Contact */}
-          <div className="md:text-left text-center">
-            <p className="mb-1">Адрес: г. Москва,</p>
-            <p className="mb-1">Волоколамское шоссе д.1 стр. 1, офис 606С</p>
-            <p className="mb-3">+7 (915) 129-09-27 | office@pathologica.ru</p>
-            <p className="mb-1">График работы: пн-пт 10:00 - 18:00</p>
+          <div className="md:text-left text-center ">
+            <p className="md:mb-1">Адрес: г. Москва,</p>
+            <p className="md:mb-1">Волоколамское шоссе д.1 стр. 1, офис 606С</p>
+            <p className="md:mb-3">
+              +7 (915) 129-09-27 | office@pathologica.ru
+            </p>
+            <p className="md:mb-1">График работы: пн-пт 10:00 - 18:00</p>
           </div>
 
           {/* Middle Section - Location Icon */}
@@ -36,7 +40,10 @@ const Footer = () => {
                 "Условия использования",
                 "Политика конфиденциальности",
               ].map((item, index) => (
-                <li key={index} className="mb-1 hover:underline cursor-pointer">
+                <li
+                  key={index}
+                  className="md:mb-1 hover:underline cursor-pointer"
+                >
                   {item}
                 </li>
               ))}

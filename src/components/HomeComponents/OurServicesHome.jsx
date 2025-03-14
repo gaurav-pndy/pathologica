@@ -40,7 +40,7 @@ const services = [
 const OurServicesHome = () => {
   return (
     <section className="text-[#333333] py-10">
-      <div className=" mx-auto px-20">
+      <div className=" mx-auto px-6 md:px-20">
         <h2 className="text-5xl  font-bold text-center mb-8">Наши услуги</h2>
 
         {/* Service Cards */}
@@ -76,7 +76,7 @@ const OurServicesHome = () => {
 
         {/* Button */}
         <div className="text-center mt-10">
-          <button className="bg-[#5ebac5] text-white text-3xl font-semibold px-16 py-3 rounded-full shadow-md shadow-[#b1b0b0] hover:bg-[#8c91b7] transition cursor-pointer">
+          <button className="bg-[#5ebac5] text-white text-xl md:text-3xl font-semibold px-16 py-3 rounded-full shadow-md shadow-[#b1b0b0] hover:bg-[#8c91b7] transition cursor-pointer">
             СТОИМОСТЬ УСЛУГ
           </button>
         </div>
