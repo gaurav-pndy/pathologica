@@ -1,23 +1,34 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const imageRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(imageRef.current, {
-      x: 50, // Moves 50px to the right
-      scrollTrigger: {
-        trigger: imageRef.current,
-        start: "top bottom", // Animation starts when the image enters the viewport
-        scrub: true, // Smooth animation effect
+    gsap.fromTo(
+      imageRef.current,
+      {
+        x: -90, // Start position (shifted left)
       },
-    });
+      {
+        x: 90, // Moves 100px to the right
+        ease: "none",
+        scrollTrigger: {
+          trigger: imageRef.current,
+          start: "top bottom", // Starts when image enters viewport
+          end: "bottom top", // Ends when image leaves viewport
+          scrub: 1, // Smooth scrolling effect
+        },
+      }
+    );
   }, []);
 
   return (
-    <section className="flex flex-col md:flex-row  h-[630px]">
+    <section className="flex flex-col md:flex-row  h-[42rem] border border-[#2f606c]">
       {/* Image Section */}
       <div className="w-full md:w-1/2 relative overflow-hidden">
         <img
@@ -29,7 +40,7 @@ const Hero = () => {
       </div>
 
       {/* Text Section */}
-      <div className="w-full md:w-1/2 bg-[#336776] text-white p-12 pr-36 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 bg-[#2f606c] text-white p-12 pr-36 flex flex-col justify-center">
         <h2 className="text-6xl font-bold mb-14">PathoLogica Service</h2>
         <p className="mb-4 text-lg text-justify">
           &nbsp; &nbsp; PathoLogica Service — это общественно направленный
@@ -39,7 +50,7 @@ const Hero = () => {
           оборудовании и коллегиально устанавливают диагноз в самых сложных
           случаях.
         </p>
-        <p className="mb-4 text-lg text-justify">
+        <p className="mb-6 text-lg text-justify">
           &nbsp; На нашем сайте Вы можете заказать проведение цитологического
           или гистологического исследований, а также консультативный пересмотр
           готовых препаратов. Для этого Вам не придётся выходить из дома: после
@@ -47,9 +58,11 @@ const Hero = () => {
           привезет его назад вместе с готовым заключением. Скан заключения Вы
           получите на электронную почту сразу после завершения исследования.
         </p>
-        <button className="bg-white text-black px-6 py-2 rounded-full shadow-md hover:bg-gray-200">
-          Подробнее
-        </button>
+        <div>
+          <button className="bg-white float-end text-xl font-bold text-[#323232] px-3 py-1.5 w-fit cursor-pointer hover:bg-[#323232] hover:text-white transition-all duration-500 rounded-3xl border border-[#323232] shadow-md ">
+            Подробнее
+          </button>
+        </div>
       </div>
     </section>
   );

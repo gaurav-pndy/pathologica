@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-gray-100">
+    <header className="bg-gray-100 ">
       {/* Top Strip */}
-      <div className="bg-[#5ebac5]   px-4 py-2.5  text-blue-700 ">
+      <div className="bg-[#5ebac5]   px-4 py-2.5   text-blue-700 ">
         <div className="max-w-7xl flex justify-end items-center space-x-4 mx-auto">
           <BsTelephone className="cursor-pointer text-3xl" />
           <CiMail className="cursor-pointer text-4xl" />
@@ -16,7 +16,7 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <div className="bg-[#e0e0e0] p-1 ">
+      <div className="bg-[#e0e0e0] p-1 pb-5 ">
         {/* Logo Section */}
         <div className="flex  space-x-3 items-center max-w-[84rem] mx-auto">
           <div className="flex items-center ">
