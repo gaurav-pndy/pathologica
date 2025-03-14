@@ -28,7 +28,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="flex flex-col md:flex-row  h-[42rem] border border-[#2f606c]">
+    <section className="flex flex-col md:flex-row  h-[42rem] border-t border-[#2f606c]">
       {/* Image Section */}
       <div className="w-full md:w-1/2 relative overflow-hidden">
         <img
