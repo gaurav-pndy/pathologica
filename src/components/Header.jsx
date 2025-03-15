@@ -13,18 +13,18 @@ const Header = () => {
   const navLinks = [
     { name: "О нас", path: "/about" },
     { name: "Эксперты сервиса", path: "/experts" },
-    { name: "Наши услуги", path: "/services" },
-    { name: "Стоимость услуг", path: "/pricing" },
+    { name: "Наши услуги", path: "/our-services" },
+    { name: "Стоимость услуг", path: "/services" },
     { name: "Подать заявку", path: "/apply" },
-    { name: "Доставка и оплата", path: "/shipping" },
+    { name: "Доставка и оплата", path: "/delivery" },
   ];
 
   return (
-    <header className="bg-gray-100">
+    <header className="bg-gray-100 shadow-md shadow-black/40">
       {/* Top Strip */}
-      <div className="bg-[#5ebac5] px-4 py-2.5 text-white">
-        <div className="max-w-7xl flex justify-end items-center space-x-4 mx-auto">
-          <BsTelephone className="cursor-pointer text-xl sm:text-2xl md:text-3xl" />
+      <div className="bg-[#5ebac5] px-4 py-2.5 text-white md:pr-10">
+        <div className="max-w-7xl flex justify-end items-center space-x-4 mx-auto text-blue-500">
+          <BsTelephone className="cursor-pointer text-xl sm:text-2xl md:text-2xl" />
           <CiMail className="cursor-pointer text-xl sm:text-2xl md:text-3xl" />
         </div>
       </div>
@@ -34,11 +34,14 @@ const Header = () => {
         <div className="flex justify-between items-center max-w-[84rem] mx-auto">
           {/* Logo Section */}
           <div className="w-64 sm:w-80 md:w-[40rem]">
-            <img
-              src="https://static.wixstatic.com/media/e6f22e_26677178adb448a9a9816ef76b9020b9~mv2.png/v1/fill/w_529,h_119,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D0%BF%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B4%D0%B6%D0%B8%D0%BA%D0%B8%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9.png"
-              alt="Logo"
-              className="w-full "
-            />
+            <Link to={"/"}>
+              {" "}
+              <img
+                src="https://static.wixstatic.com/media/e6f22e_26677178adb448a9a9816ef76b9020b9~mv2.png/v1/fill/w_529,h_119,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D0%BF%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B4%D0%B6%D0%B8%D0%BA%D0%B8%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9.png"
+                alt="Logo"
+                className="w-full "
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

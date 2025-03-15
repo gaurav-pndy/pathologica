@@ -39,7 +39,7 @@ const services = [
 
 const OurServicesHome = () => {
   return (
-    <section className="text-[#333333] py-10">
+    <section className="text-[#333333] pt-10">
       <div className=" mx-auto px-6 md:px-20">
         <h2 className="text-5xl  font-bold text-center mb-8">Наши услуги</h2>
 
