@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -11,18 +10,17 @@ const Hero = () => {
 
   useEffect(() => {
     if (window.innerWidth > 768) {
-      // Only apply animation on larger screens
       gsap.fromTo(
         imageRef.current,
-        { x: -90 }, // Start position (shifted left)
+        { x: -90 },
         {
-          x: 90, // Moves 90px to the right
+          x: 90,
           ease: "none",
           scrollTrigger: {
             trigger: imageRef.current,
-            start: "top bottom", // Starts when image enters viewport
-            end: "bottom top", // Ends when image leaves viewport
-            scrub: 1, // Smooth scrolling effect
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
           },
         }
       );
@@ -31,7 +29,6 @@ const Hero = () => {
 
   return (
     <section className="flex flex-col md:flex-row h-auto md:h-[43rem] border-t border-[#2f606c]">
-      {/* Image Section */}
       <div className="w-full md:w-1/2 relative overflow-hidden h-[24rem] md:h-auto">
         <img
           ref={imageRef}
@@ -41,7 +38,6 @@ const Hero = () => {
         />
       </div>
 
-      {/* Text Section */}
       <div className="w-full md:w-1/2 bg-[#2f606c] text-white p-6 sm:p-10 md:p-12 md:pr-20 lg:pr-36 flex flex-col justify-center">
         <h2 className="text-3xl text-center  sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-14">
           PathoLogica Service

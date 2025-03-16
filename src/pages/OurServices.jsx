@@ -15,7 +15,6 @@ const OurServices = () => {
         </h2>
 
         <div className="  mx-auto text-[0.95rem] text-center tracking-tight leading-[1.64rem]">
-          {/* Service 1 */}
           <div className="mb-8">
             <h3 className="font-bold text-[1.08rem]">
               1. Первичное цитологическое / гистологическое исследование
@@ -44,7 +43,6 @@ const OurServices = () => {
             </p>
           </div>
 
-          {/* Service 2 */}
           <div className="mb-8">
             <h3 className="font-bold text-[1.08rem]">
               2. Экспертное мнение: первичное цитологическое исследование
@@ -56,7 +54,6 @@ const OurServices = () => {
             </p>
           </div>
 
-          {/* Service 3 */}
           <div className="mb-8">
             <h3 className="font-bold text-[1.08rem]">
               3. Пересмотр готовых цитологических / гистологических препаратов
@@ -71,7 +68,6 @@ const OurServices = () => {
             </p>
           </div>
 
-          {/* Service 4 */}
           <div>
             <h3 className="font-bold text-[1.08rem]">
               4. Экспертное мнение: пересмотр готовых гистологических препаратов

@@ -46,7 +46,6 @@ const steps = [
 const Delivery = () => {
   return (
     <section className="relative py-10">
-      {/* Background image behind everything */}
       <div
         className="absolute inset-0 -z-20 bg-cover bg-center bg-fixed"
         style={{
@@ -54,10 +53,8 @@ const Delivery = () => {
         }}
       ></div>
 
-      {/* Gray overlay above background but behind content */}
       <div className="absolute inset-0 bg-gray-200/70 -z-10"></div>
 
-      {/* Content stays on top and remains clickable */}
       <div className="relative z-10 max-w-5xl px-4 md:px-10 mx-auto">
         <div className="max-w-5xl p-4 md:p-6 md:pl-4 mx-auto bg-white">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">

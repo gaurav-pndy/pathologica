@@ -9,12 +9,12 @@ import { useState } from "react";
 
 const containerStyle = {
   width: "100%",
-  height: "250px", // Adjust height as needed
+  height: "250px",
 };
 
 const center = {
-  lat: 55.80657, // Replace with actual latitude
-  lng: 37.504691, // Replace with actual longitude
+  lat: 55.80657,
+  lng: 37.504691,
 };
 
 const MapSection = () => {
@@ -32,17 +32,15 @@ const MapSection = () => {
             center={center}
             zoom={14}
           >
-            {/* Marker */}
             <Marker
               position={center}
               onClick={() => setSelectedMarker(center)}
             />
 
-            {/* Info Window (Appears slightly above the marker) */}
             {selectedMarker && (
               <InfoWindow
                 position={{
-                  lat: center.lat + 0.002, // Move slightly upward
+                  lat: center.lat + 0.002,
                   lng: center.lng,
                 }}
                 onCloseClick={() => setSelectedMarker(null)}

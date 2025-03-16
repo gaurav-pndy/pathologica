@@ -5,7 +5,6 @@ const About = () => {
     <section className="w-full max-w-6xl px-4 mx-auto py-1.5 mb-10 flex justify-center">
       <div className="container mx-auto relative ">
         <div className="flex flex-col md:flex-row items-center">
-          {/* Left Side - Image */}
           <div className="w-full">
             <img
               src="https://static.wixstatic.com/media/e6f22e_e5e78d0836d34599aaa943e2abfd29a6~mv2.jpg" // Replace with actual image path
@@ -14,7 +13,6 @@ const About = () => {
             />
           </div>
 
-          {/* Right Side - Text Box */}
           <div className="md:w-[28.5rem]   md:absolute right-16 top-6 bg-white/60 p-6 text-justify text-[0.95rem] tracking-tight leading-6 ">
             <p className=" ">
               &nbsp; &nbsp;{" "}

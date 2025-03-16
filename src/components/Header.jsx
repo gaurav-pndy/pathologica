@@ -7,7 +7,7 @@ import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation(); // Get current route
+  const location = useLocation();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -22,7 +22,6 @@ const Header = () => {
 
   return (
     <header className="bg-gray-100 shadow-md shadow-black/40 ">
-      {/* Top Strip */}
       <div className="bg-[#5ebac5] px-4 py-2.5 text-white md:pr-10">
         <div className="max-w-7xl flex justify-end items-center space-x-4 mx-auto text-blue-700 ">
           <BsTelephone className="cursor-pointer text-xl sm:text-2xl md:text-2xl" />
@@ -30,10 +29,8 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Main Header */}
       <div className="bg-[#e0e0e0] pb-4 pt-1">
         <div className="flex justify-between items-center max-w-[84rem] mx-auto">
-          {/* Logo Section */}
           <div className="w-64 sm:w-80 md:w-[40rem]">
             <Link to="/">
               <img
@@ -73,15 +70,13 @@ const Header = () => {
             </ul>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button className="md:hidden mr-3 text-3xl" onClick={toggleMenu}>
             {menuOpen ? <HiX /> : <HiMenu />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
-          <nav className="md:hidden absolute w-full left-0 mt-4 bg-gray-100 border-t border-gray-300 z-10 shadow-lg">
+          <nav className="md:hidden absolute w-full left-0 mt-4 bg-gray-100 border-t border-gray-300 z-20 shadow-lg">
             <ul className="flex flex-col space-y-2 p-4">
               {navLinks.map((item, index) => {
                 const isActive = location.pathname === item.path;

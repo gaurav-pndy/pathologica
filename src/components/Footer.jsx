@@ -2,14 +2,11 @@ const Footer = () => {
   return (
     <footer className="bg-[#64B5C5] text-white text-center pt-10">
       <div className="max-w-5xl mx-auto px-6">
-        {/* Heading */}
         <h2 className="text-2xl md:text-4xl font-bold mb-2 uppercase">
           КОНТАКТНЫЕ ДАННЫЕ
         </h2>
 
-        {/* Main Content */}
         <div className="flex flex-col md:flex-row justify-between text-lg md:text-[1.38rem] tracking-tight items-center">
-          {/* Left Section - Address & Contact */}
           <div className="md:text-left text-center ">
             <p className="">Адрес: г. Москва,</p>
             <p className="">Волоколамское шоссе д.1 стр. 1, офис 606С</p>
@@ -19,7 +16,6 @@ const Footer = () => {
             <p className="md:mb-1">График работы: пн-пт 10:00 - 18:00</p>
           </div>
 
-          {/* Middle Section - Location Icon */}
           <div className="my-6 md:my-0">
             <a href="https://yandex.ru/maps/213/moscow/house/volokolamskoye_shosse_1s1/Z04YcwdkT00GQFtvfXRxd3lgZA==/?ll=37.504681%2C55.806530&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16">
               <div className="bg-white p-3 rounded-md shadow-md hover:bg-[#d2d2d3] transition duration-200">
@@ -32,7 +28,6 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Right Section - Links */}
           <div className="md:text-right text-center">
             <ul className="font-medium">
               {[
@@ -68,7 +63,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Copyright */}
       <div className="mt-4  text-blue-950 bg-white py-2 font-bold text-sm">
         © 2025 Все права защищены
       </div>
