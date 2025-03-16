@@ -148,7 +148,7 @@ const services = [
 const Services = () => {
   return (
     <section
-      className="relative pt-6 pb-8 md:pb-13 bg-cover bg-center bg-fixed"
+      className="-z-10 relative pt-6 pb-8 md:pb-13 bg-cover bg-center bg-fixed"
       style={{
         backgroundImage: `url('https://static.wixstatic.com/media/a31a5a_e99bbbf837484c6eb2a4ff285508b4db~mv2.jpg')`,
       }}

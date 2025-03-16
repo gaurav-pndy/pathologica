@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { Link } from "react-router";
 
 const services = [
   {
@@ -54,21 +55,28 @@ const OurServicesHome = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-4 ">
-                <h3 className="text-xl text-center  font-bold my-2">
+              <div className="py-6 px-4 ">
+                <h3 className="text-xl text-center  font-bold ">
                   {service.title}
                 </h3>
-                <ul className=" text-sm leading-6 font-semibold my-4">
+                <ul className=" text-sm leading-6  mt-4 mb-2">
                   {service.description.map((item, idx) => (
                     <li key={idx}>{item}</li>
                   ))}
                 </ul>
-                <p className="text-lg font-semibold">
-                  От: <span className="text-black">{service.price}</span>
-                </p>
-                <button className="mt-4 px-4 py-2 border border-gray-600 rounded-xl text-black font-semibold hover:bg-gray-200 transition">
-                  Подробнее
-                </button>
+                <div className="flex justify-between items-center ">
+                  <p className="text-lg ">
+                    От:{" "}
+                    <span className="text-black font-semibold text-2xl">
+                      {service.price}
+                    </span>
+                  </p>
+                  <Link to={"/services"}>
+                    <button className=" px-3 py-1.5 border border-gray-600 rounded-full shadow-md shadow-black/40 text-black font-semibold text-xl hover:bg-[#747474] cursor-pointer hover:text-white transition-all duration-500">
+                      Подробнее
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

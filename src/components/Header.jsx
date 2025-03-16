@@ -21,7 +21,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-gray-100 shadow-md shadow-black/40">
+    <header className="bg-gray-100 shadow-md shadow-black/40 ">
       {/* Top Strip */}
       <div className="bg-[#5ebac5] px-4 py-2.5 text-white md:pr-10">
         <div className="max-w-7xl flex justify-end items-center space-x-4 mx-auto text-blue-500">

@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { Link } from "react-router";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,23 +10,23 @@ const Hero = () => {
   const imageRef = useRef(null);
 
   useEffect(() => {
-    if (window.innerWidth > 768) {
-      // Only apply animation on larger screens
-      gsap.fromTo(
-        imageRef.current,
-        { x: -90 }, // Start position (shifted left)
-        {
-          x: 90, // Moves 90px to the right
-          ease: "none",
-          scrollTrigger: {
-            trigger: imageRef.current,
-            start: "top bottom", // Starts when image enters viewport
-            end: "bottom top", // Ends when image leaves viewport
-            scrub: 1, // Smooth scrolling effect
-          },
-        }
-      );
-    }
+    // if (window.innerWidth > 768) {
+    // Only apply animation on larger screens
+    gsap.fromTo(
+      imageRef.current,
+      { x: -90 }, // Start position (shifted left)
+      {
+        x: 90, // Moves 90px to the right
+        ease: "none",
+        scrollTrigger: {
+          trigger: imageRef.current,
+          start: "top bottom", // Starts when image enters viewport
+          end: "bottom top", // Ends when image leaves viewport
+          scrub: 1, // Smooth scrolling effect
+        },
+      }
+    );
+    // }
   }, []);
 
   return (
@@ -65,9 +66,11 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-end">
-          <button className="bg-white text-lg sm:text-xl font-bold text-[#323232] px-4 py-2 sm:px-5 sm:py-2.5 cursor-pointer hover:bg-[#323232] hover:text-white transition-all duration-500 rounded-3xl border border-[#323232] shadow-md">
-            Подробнее
-          </button>
+          <Link to={"/about"}>
+            <button className="bg-white text-lg sm:text-xl font-bold text-[#323232] px-4 py-2 sm:px-5 sm:py-2.5 cursor-pointer hover:bg-[#323232] hover:text-white transition-all duration-500 rounded-3xl border border-[#323232] shadow-md">
+              Подробнее
+            </button>
+          </Link>
         </div>
       </div>
     </section>

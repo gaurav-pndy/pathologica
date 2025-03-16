@@ -48,7 +48,7 @@ const experts = [
 const Experts = () => {
   return (
     <section
-      className="relative pt-8 pb-13 bg-cover bg-center"
+      className="-z-10 relative pt-8 pb-13 bg-cover bg-center"
       style={{
         backgroundImage: `url('https://static.wixstatic.com/media/e6f22e_5d038a6c2aaf46e09c5172c73fcf92d8~mv2.jpg')`,
       }}

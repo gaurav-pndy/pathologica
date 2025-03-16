@@ -70,7 +70,7 @@ const Footer = () => {
 
       {/* Bottom Copyright */}
       <div className="mt-4  text-blue-950 bg-white py-2 font-bold text-sm">
-        © 2023 Все права защищены
+        © 2025 Все права защищены
       </div>
     </footer>
   );
