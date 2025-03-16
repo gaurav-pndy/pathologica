@@ -48,13 +48,12 @@ const MapSection = () => {
                 onCloseClick={() => setSelectedMarker(null)}
               >
                 <div>
-                  <h3>
-                    <b>PathoLogica Service</b>
-                  </h3>
+                  <h3 className="font-semibold">PathoLogica Service</h3>
                   <a
                     href="https://www.google.com/maps/dir/?api=1&destination=55.80657,37.504691"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="text-blue-900 underline"
                   >
                     Как добраться
                   </a>

@@ -10,23 +10,23 @@ const Hero = () => {
   const imageRef = useRef(null);
 
   useEffect(() => {
-    // if (window.innerWidth > 768) {
-    // Only apply animation on larger screens
-    gsap.fromTo(
-      imageRef.current,
-      { x: -90 }, // Start position (shifted left)
-      {
-        x: 90, // Moves 90px to the right
-        ease: "none",
-        scrollTrigger: {
-          trigger: imageRef.current,
-          start: "top bottom", // Starts when image enters viewport
-          end: "bottom top", // Ends when image leaves viewport
-          scrub: 1, // Smooth scrolling effect
-        },
-      }
-    );
-    // }
+    if (window.innerWidth > 768) {
+      // Only apply animation on larger screens
+      gsap.fromTo(
+        imageRef.current,
+        { x: -90 }, // Start position (shifted left)
+        {
+          x: 90, // Moves 90px to the right
+          ease: "none",
+          scrollTrigger: {
+            trigger: imageRef.current,
+            start: "top bottom", // Starts when image enters viewport
+            end: "bottom top", // Ends when image leaves viewport
+            scrub: 1, // Smooth scrolling effect
+          },
+        }
+      );
+    }
   }, []);
 
   return (
