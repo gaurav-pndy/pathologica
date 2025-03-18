@@ -4,7 +4,7 @@ const steps = [
       "https://static.wixstatic.com/media/e6f22e_3bcc6aeb4ca7482b93fec43c700fdf3b~mv2.png", // Replace with actual image path
     title: "1 шаг. Подать заявку",
     description:
-      "Для заказа цитологического и/или гистологического исследования, необходимо оформить <a href='https://www.pathologica.ru/apply' class='underline text-blue-500'>Заявку</a> на нашем сайте, для этого Вам нужно указать всю необходимую информацию о текущем заболевании, прикрепить имеющиеся документы, заполнить данные для доставки. А также распечатать и заполнить собственноручно Приложение №1 Агентского договора (публичной оферты) №3 от 02.05.2022. Вы также можете оформить заявку с помощью менеджера PathoLogica Service в нашем офисе.",
+      "Для заказа цитологического и/или гистологического исследования, необходимо оформить <a href='/apply' class='underline text-blue-500'>Заявку</a> на нашем сайте, для этого Вам нужно указать всю необходимую информацию о текущем заболевании, прикрепить имеющиеся документы, заполнить данные для доставки. А также распечатать и заполнить собственноручно Приложение №1 Агентского договора (публичной оферты) №3 от 02.05.2022. Вы также можете оформить заявку с помощью менеджера PathoLogica Service в нашем офисе.",
   },
   {
     imgSrc:
@@ -25,7 +25,7 @@ const steps = [
       "https://static.wixstatic.com/media/e6f22e_3384129c44e746ad87fb8efba982c64a~mv2.png",
     title: "4 шаг. Доставка",
     description:
-      "Мы осуществляем бесплатную курьерскую доставку по всей России. Длительность доставки составляет 1–7 дней (в зависимости от удаленности населенного пункта от г. Москвы) курьерской службой <a href='https://dostavista.ru/?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com' class='underline text-blue-500'>«Dostavista»</a> или <a href='https://www.cdek.ru/ru' class='underline text-blue-500'>«СДЭК»</a>.",
+      "Мы осуществляем бесплатную курьерскую доставку по всей России. Длительность доставки составляет 1–7 дней (в зависимости от удаленности населенного пункта от г. Москвы) курьерской службой <a href='https://dostavista.ru/?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com' target='_blank' class='underline text-blue-500'>«Dostavista»</a> или <a href='https://www.cdek.ru/ru' target='_blank' class='underline text-blue-500'>«СДЭК»</a>.",
   },
   {
     imgSrc:
@@ -39,7 +39,7 @@ const steps = [
       "https://static.wixstatic.com/media/e6f22e_a744ef7641854c9b90054b0aef73cee9~mv2.png",
     title: "6 шаг. Получение заключения и материала",
     description:
-      "После завершения исследования мы отправим Вам оригинал заключения, материал и документы курьерской службой (<a href='https://dostavista.ru/?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com' class='underline text-blue-500'>«Dostavista»</a>, <a href='https://www.cdek.ru/ru' class='underline text-blue-500'>«СДЭК»</a>). Копия заключения в формате PDF будет направлена Вам на электронную почту в день окончания исследования.",
+      "После завершения исследования мы отправим Вам оригинал заключения, материал и документы курьерской службой (<a href='https://dostavista.ru/?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com' target='_blank' class='underline text-blue-500'>«Dostavista»</a>, <a href='https://www.cdek.ru/ru' target='_blank' class='underline text-blue-500'>«СДЭК»</a>). Копия заключения в формате PDF будет направлена Вам на электронную почту в день окончания исследования.",
   },
 ];
 

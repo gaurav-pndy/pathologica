@@ -21,7 +21,7 @@ const About = () => {
               директором Евразийской федерации онкологии{" "}
               <a
                 target="_blank"
-                href="https://www.pathologica.ru/drsoma"
+                href="https://www.drsoma.info/"
                 className="text-blue-500 hover:underline"
               >
                 Доктором Самой (Сомасундарам СУБРАМАНИАН)

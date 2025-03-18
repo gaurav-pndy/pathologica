@@ -24,8 +24,12 @@ const Header = () => {
     <header className="bg-gray-100 shadow-md shadow-black/40 ">
       <div className="bg-[#5ebac5] px-4 py-2.5 text-white md:pr-10">
         <div className="max-w-7xl flex justify-end items-center space-x-4 mx-auto text-blue-700 ">
-          <BsTelephone className="cursor-pointer text-xl sm:text-2xl md:text-2xl" />
-          <CiMail className="cursor-pointer text-xl sm:text-2xl md:text-3xl" />
+          <a href="https://wa.me/79151290927" target="_blank">
+            <BsTelephone className="cursor-pointer text-xl sm:text-2xl md:text-2xl" />
+          </a>
+          <a href="mailto:office@pathologica.ru" target="_blank">
+            <CiMail className="cursor-pointer text-xl sm:text-2xl md:text-3xl" />
+          </a>
         </div>
       </div>
 

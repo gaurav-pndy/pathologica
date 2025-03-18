@@ -82,9 +82,11 @@ const OurServicesHome = () => {
         </div>
 
         <div className="text-center mt-10">
-          <button className="bg-[#5ebac5] text-white text-xl md:text-3xl font-semibold px-16 py-3 rounded-full shadow-md shadow-[#b1b0b0] hover:bg-[#8c91b7] transition cursor-pointer">
-            СТОИМОСТЬ УСЛУГ
-          </button>
+          <Link to={"/services"}>
+            <button className="bg-[#5ebac5] text-white text-xl md:text-3xl font-semibold px-16 py-3 rounded-full shadow-md shadow-[#b1b0b0] hover:bg-[#8c91b7] transition cursor-pointer">
+              СТОИМОСТЬ УСЛУГ
+            </button>
+          </Link>
         </div>
       </div>
     </section>

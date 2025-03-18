@@ -26,7 +26,7 @@ const Apply = () => {
         <div
           className="w-full"
           dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://forms.zohopublic.com/EAFO/form/PathologicaINV2/formperma/qWVFBmdTkeXs6a6T_hZj1gqO4WB6Lxf0Q54WULEcxBk" width="100%" height="600px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>`,
+            __html: `<iframe src="https://forms.zohopublic.com/EAFO/form/PathologicaINV2/formperma/qWVFBmdTkeXs6a6T_hZj1gqO4WB6Lxf0Q54WULEcxBk" width="100%" height="600px" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto"></iframe>`,
           }}
         ></div>
       </div>
