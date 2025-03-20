@@ -3,7 +3,6 @@ import React from "react";
 const FormScreen3 = ({ formData, handleChange, errors }) => {
   return (
     <div className="p-3 md:p-6 text-left text-[1.1rem]">
-      {/* Clinical Diagnosis */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Клинический диагноз <span className="text-red-500">*</span>
@@ -21,7 +20,6 @@ const FormScreen3 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Process Localization */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Локализация процесса <span className="text-red-500">*</span>
@@ -40,7 +38,6 @@ const FormScreen3 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Material Collection Method */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Способ получения материала (пункция, соскоб, отпечаток, биопсия,
@@ -63,7 +60,6 @@ const FormScreen3 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Number of Localizations */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Количество локализаций <span className="text-red-500">*</span>
@@ -85,7 +81,6 @@ const FormScreen3 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Number of Containers from One Operation */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Количество контейнеров от одной операции{" "}
@@ -106,7 +101,6 @@ const FormScreen3 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Number of Slides to Prepare */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Количество стекол, которые необходимо изготовить
@@ -123,7 +117,6 @@ const FormScreen3 = ({ formData, handleChange, errors }) => {
         </div>
       </div>
 
-      {/* Research Price Information */}
       <div className="mb-6">
         <h3 className="block text-[#08788b] text-[1.45rem] ">
           ЦЕНА ИССЛЕДОВАНИЯ
@@ -148,7 +141,6 @@ const FormScreen3 = ({ formData, handleChange, errors }) => {
         </div>
       </div>
 
-      {/* Promo Code */}
       <div className="mb-4">
         <label className="block text-[#08788b] text-[1.4rem] mb-2">
           Промокод

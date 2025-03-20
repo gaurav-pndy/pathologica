@@ -1,7 +1,6 @@
 import React from "react";
 
 const FormScreen2 = ({ formData, handleChange, errors }) => {
-  // Calculate age automatically based on date of birth
   const calculateAge = (birthDate) => {
     if (!birthDate) return "";
 
@@ -17,12 +16,10 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
     return age;
   };
 
-  // Handle date of birth change and update age
   const handleDobChange = (e) => {
     const dob = e.target.value;
     handleChange("dateOfBirth", dob);
 
-    // Calculate and update age
     const calculatedAge = calculateAge(dob);
     handleChange("age", calculatedAge.toString());
   };
@@ -33,7 +30,6 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
         Данные пациента
       </h2>
 
-      {/* Last name */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Фамилия пациента <span className="text-red-500">*</span>
@@ -50,7 +46,6 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* First name */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Имя пациента <span className="text-red-500">*</span>
@@ -67,7 +62,6 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Middle name / Patronymic */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Отчество пациента
@@ -80,7 +74,6 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
         />
       </div>
 
-      {/* Gender */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Пол <span className="text-red-500">*</span>
@@ -118,7 +111,6 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Date of Birth */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Дата рождения <span className="text-red-500">*</span>
@@ -141,7 +133,6 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Age */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Возраст
@@ -154,7 +145,6 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
         />
       </div>
 
-      {/* Phone Number */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Контактный номер пациента <span className="text-red-500">*</span>
@@ -176,7 +166,6 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Email */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Электронная почта пациента <span className="text-red-500">*</span>

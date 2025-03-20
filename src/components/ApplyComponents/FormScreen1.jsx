@@ -1,7 +1,6 @@
 import React from "react";
 
 const FormScreen1 = ({ formData, handleChange, errors }) => {
-  // Determine which research category options to show based on consultation type
   const renderCategoryOptions = () => {
     switch (formData.consultationType) {
       case "Цитологическое исследование":
@@ -284,7 +283,6 @@ const FormScreen1 = ({ formData, handleChange, errors }) => {
 
   return (
     <div className="p-3 md:p-6 text-left text-[1.1rem]">
-      {/* First question - relationship to patient */}
       <div className="mb-6 ">
         <label className="block text-[#08788b]  text-[1.4rem] mb-1">
           Кем Вы приходитесь пациенту? <span className="text-red-500">*</span>
@@ -320,7 +318,6 @@ const FormScreen1 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Second question - consultation type */}
       <div className="mb-6">
         <label className="block text-[#08788b] text-[1.4rem]  mb-1">
           Вид консультации <span className="text-red-500">*</span>
@@ -388,7 +385,6 @@ const FormScreen1 = ({ formData, handleChange, errors }) => {
         )}
       </div>
 
-      {/* Information link */}
       <div className="mb-6 text-sm italic">
         Вы можете узнать подробную информацию о предоставляемых услугах{" "}
         <a
@@ -400,7 +396,6 @@ const FormScreen1 = ({ formData, handleChange, errors }) => {
         .
       </div>
 
-      {/* Third question - research category (dynamic based on consultation type) */}
       {formData.consultationType &&
         formData.consultationType !== "Консультация Патолога" && (
           <div className="mb-6">

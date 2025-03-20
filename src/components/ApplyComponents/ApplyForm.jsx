@@ -113,8 +113,6 @@ function ApplyForm() {
           position: "top-center",
         });
         console.log(data.message); // Handle success response
-
-        // Clear the form data after successful submission
       } else {
         console.log(formData);
 
