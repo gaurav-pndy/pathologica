@@ -1,4 +1,6 @@
 import React from "react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const FormScreen2 = ({ formData, handleChange, errors }) => {
   const calculateAge = (birthDate) => {
@@ -149,12 +151,15 @@ const FormScreen2 = ({ formData, handleChange, errors }) => {
         <label className="block text-[#08788b] text-[1.4rem] mb-1">
           Контактный номер пациента <span className="text-red-500">*</span>
         </label>
-        <input
-          type="tel"
+        <PhoneInput
+          country={"ru"}
           value={formData.phoneNumber || ""}
-          onChange={(e) => handleChange("phoneNumber", e.target.value)}
-          className="w-full md:w-[50%] shadow-md shadow-black/30 p-2 border bg-[#d5e6e9] border-none  rounded"
-          required
+          onChange={(phone) => handleChange("phoneNumber", phone)}
+          inputClass="!w-full md:!w-[50%] !rounded !shadow-md !shadow-black/30 !border-none !bg-[#d5e6e9] !p-5.5 !text-black !pl-10"
+          buttonClass="!bg-[#d5e6e9] !border-none"
+          dropdownClass="!bg-white !text-black !shadow-lg"
+          containerClass="w-full md:w-[50%]"
+          enableSearch
         />
         <div className="text-xs text-gray-500 mt-1 italic">
           Номер телефона пациента

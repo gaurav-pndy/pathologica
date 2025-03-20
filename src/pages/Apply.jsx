@@ -13,7 +13,7 @@ const Apply = () => {
 
       <div className="absolute inset-0 bg-gray-200/70 -z-10"></div>
       <div className="relative  max-w-4xl text-center mx-auto">
-        <h2 className="text-[2.85rem] font-bold  mb-4">
+        <h2 className="text-[2.6rem] sm:text-[2.85rem] font-bold  mb-4">
           ЗАЯВКА НА ИССЛЕДОВАНИЕ
         </h2>
         <h5 className=" px-2 text-[1.07rem]">
